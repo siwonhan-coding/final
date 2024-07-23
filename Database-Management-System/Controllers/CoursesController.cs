@@ -48,7 +48,7 @@ namespace Database_Management_System.Controllers
         // GET: Courses/Create
         public IActionResult Create()
         {
-            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentId");
+            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentNumber");
             return View();
         }
 
@@ -65,7 +65,7 @@ namespace Database_Management_System.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentId", course.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentNumber", course.StudentId);
             return View(course);
         }
 
@@ -82,7 +82,7 @@ namespace Database_Management_System.Controllers
             {
                 return NotFound();
             }
-            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentId", course.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentNumber", course.StudentId);
             return View(course);
         }
 
@@ -118,7 +118,7 @@ namespace Database_Management_System.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentId", course.StudentId);
+            ViewData["StudentId"] = new SelectList(_context.Students, "StudentId", "StudentNumber", course.StudentId);
             return View(course);
         }
 
