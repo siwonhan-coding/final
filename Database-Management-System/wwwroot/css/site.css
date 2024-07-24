@@ -18,5 +18,26 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: "Righteous", sans-serif
+}
+th > a {
+    text-decoration: none;
+}
+
+a {
+    color: #00796B;
+}
+
+.btn-primary {
+    background-color: #B2DFDB;
+    color: black;
+}
+
+.navbar-dark {
+    background-color: #009688;
+}
+
+.text-light {
+    color: #CDDC39;
 }

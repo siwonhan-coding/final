@@ -9,14 +9,14 @@
 <p>
     <a asp-action="Create">Register Here</a>
 </p>
-<table class="table">
+<table class="table sortable">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.CourseName)
+                <a href="#">@Html.DisplayNameFor(model => model.CourseName)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CourseNumber)
+                <a href ="#">@Html.DisplayNameFor(model => model.CourseNumber)</a>
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.CourseType)
@@ -25,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.Coompleted)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Student)
+                <a href="#">@Html.DisplayNameFor(model => model.Student)</a>
             </th>
             <th></th>
         </tr>
