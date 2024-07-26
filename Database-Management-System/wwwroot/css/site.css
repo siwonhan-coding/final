@@ -41,3 +41,6 @@ a {
 .text-light {
     color: #CDDC39;
 }
+.text-light:hover{
+    background-color: black;
+}
